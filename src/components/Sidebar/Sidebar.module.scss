@@ -1,0 +1,11 @@
+@import '../../variables';
+
+.sidebar {
+  width: 248px;
+  background-color: $white;
+  box-shadow: $box-shadow-color;
+  height: 623px;
+  border-radius: $border-radius;
+  margin-top: 16px;
+  margin-right: 24px;
+}
