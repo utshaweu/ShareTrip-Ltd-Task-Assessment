@@ -1,7 +1,7 @@
 # ShareTrip-Ltd-Task-Assessment
 
 # Task: 
-Please convert this Figma design to a working react/next js application. The intention of this test is to validate your HTML and CSS skills. 
+Please convert this Figma design to a working react/next js application. 
 
 Figma Link: https://www.figma.com/design/Mrm9V9wfBdroMVHsz3FUGG/Test-Project?node-id=1-4751&t=OGijrRRLJSeY6Fdd-4
 
