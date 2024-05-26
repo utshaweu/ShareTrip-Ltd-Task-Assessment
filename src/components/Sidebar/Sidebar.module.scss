@@ -1,11 +1,9 @@
-@import '../../variables';
-
 .sidebar {
   width: 248px;
-  background-color: $white;
-  box-shadow: $box-shadow-color;
+  background-color: var(--white);
+  // box-shadow: var(--box-shadow-color);
   height: 623px;
-  border-radius: $border-radius;
+  border-radius: var(--border-radius);
   margin-top: 16px;
   margin-right: 24px;
 }

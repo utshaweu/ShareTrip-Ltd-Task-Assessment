@@ -1,34 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap');
 @import 'variables';
 
-*{
+* {
   margin: 0;
   padding: 0;
   outline: 0;
 }
-a{
-  text-decoration: $text-decoration;
+
+a {
+  text-decoration: var(--text-decoration);
 }
-a:hover{
-  text-decoration: $text-decoration;
+
+a:hover {
+  text-decoration: var(--text-decoration);
 }
-ul,ol{
-  list-style-type: $text-decoration;
+
+ul,
+ol {
+  list-style-type: var(--text-decoration);
 }
-img{
+
+img {
   vertical-align: middle;
   border: 0;
 }
 
 body {
-  font-family: $font-family;
-  background-color: $background-color;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
   height: 100vh;
-  color: $text-color;
+  color: var(--text-color);
 }
 
 .app {
   display: flex;
   flex-direction: column;
+
   .main {
     display: flex;
     width: 1112px;
@@ -36,5 +43,4 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
 }

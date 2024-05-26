@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Arrow from "../../assets/Vector.png";
+import Arrow from "../../assets/Vector.svg";
 
 const BreadcrumbDiv = styled.div`
   display: flex;

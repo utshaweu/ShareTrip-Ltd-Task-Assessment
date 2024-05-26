@@ -1,0 +1,12 @@
+@mixin flex-center($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: wrap;
+}
+
+@mixin font-properties($weight: var(--medium), $size: var(--paragraph-font-size), $lineHeight: var(--heading-font-size)) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+}
