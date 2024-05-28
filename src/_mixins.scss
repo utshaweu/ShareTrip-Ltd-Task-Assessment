@@ -2,7 +2,6 @@
   display: flex;
   justify-content: $justify;
   align-items: $align;
-  flex-wrap: wrap;
 }
 
 @mixin font-properties($weight: var(--medium), $size: var(--paragraph-font-size), $lineHeight: var(--heading-font-size)) {

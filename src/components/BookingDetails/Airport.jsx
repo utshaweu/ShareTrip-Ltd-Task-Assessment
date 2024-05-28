@@ -19,7 +19,7 @@ const Airport = ({
       >
         <h2>{title}</h2>
         <p>
-          {terminalNo}: <span>{terminalName}</span>
+          {terminalNo} <span>{terminalName}</span>
         </p>
       </div>
     </div>

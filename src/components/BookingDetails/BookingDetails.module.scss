@@ -1,4 +1,5 @@
 @import "../../mixins";
+
 .booking_details {
   width: 840px;
   margin-top: 20px;
@@ -93,6 +94,118 @@
       span {
         font-weight: var(--regular);
       }
+    }
+  }
+}
+
+.airport_history {
+  width: 100%;
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 4px;
+  .logo {
+    flex: 0 0 35px;
+    padding-top: 15px;
+  }
+  .details {
+    flex: 0 0 calc(100% - 35px);
+    position: relative;
+    .line_image,
+    .line {
+      position: absolute;
+    }
+    .line {
+      width: 2px;
+      height: calc(100% - 50px);
+      background: var(--border-color);
+      left: -20px;
+      top: 50px;
+      border-radius: 1px;
+    }
+    .line_image {
+      width: 32px;
+      height: 32px;
+      top: calc(50% + 25px);
+      left: -36px;
+      transform: translateY(-50%);
+      background: var(--white);
+      @include flex-center;
+      padding: 1px;
+    }
+    .airport_history_time {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 12px;
+      > div {
+        flex: 0 0 calc(100% / 3);
+        h2 {
+          @include font-properties(var(--semi-bold), 16px, var(--line-height));
+          color: var(--heading-title-color);
+          padding-bottom: 2px;
+        }
+        p {
+          @include font-properties(var(--regular), var(--font-size), 20px);
+        }
+      }
+      .airport_history_info {
+        padding-top: 16px;
+        padding-bottom: 8px;
+        h5 {
+          @include font-properties(
+            var(--medium),
+            var(--font-size),
+            var(--heading-font-size)
+          );
+          color: #3e4957;
+        }
+        h6 {
+          @include font-properties(
+            var(--regular),
+            var(--font-size),
+            var(--heading-font-size)
+          );
+        }
+        p {
+          padding-top: 4px;
+          @include font-properties(
+            var(--regular),
+            var(--font-size),
+            var(--line-height)
+          );
+          span {
+            font-weight: var(--medium);
+          }
+        }
+      }
+    }
+  }
+}
+
+.alertMsg {
+  @include flex-center;
+  gap: 8px;
+  padding: 8px 12px;
+  margin: 0px 0px 16px 8px;
+  background: var(--alert-bg-color);
+  border: 1px solid var(--alert-border-color);
+  border-radius: 6px;
+  .icon {
+    h6 {
+      width: 17px;
+      height: 17px;
+      line-height: 17px;
+      border-radius: 50%;
+      color: var(--white);
+      font-size: var(--small-font-size);
+      background: var(--alert-icon-color);
+      @include flex-center;
+      margin-right: 2px;
+    }
+  }
+  .text {
+    p {
+      @include font-properties(var(--regular), var(--small-font-size), 16px);
+      color: #3E4957;
     }
   }
 }
